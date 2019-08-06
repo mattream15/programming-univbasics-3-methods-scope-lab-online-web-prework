@@ -14,5 +14,7 @@ def link
 end
 
 def any_phrase
-  phrase
-  expect{any_phrase(phrase)}.to output("Do A Barrel Roll!\n").to_stdout
+  phrase = "Do A Barrel Roll!"
+  expect{any_phrase("Do A Barrel Roll!")}.to output("Do A Barrel Roll!\n").to_stdout
+end
+end
